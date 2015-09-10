@@ -35,6 +35,7 @@ get "/profile" do
 end
 
 get "/edit" do
+	@users = current_user
 	erb :edit 
 # 	redirect to "/profile"
 end
