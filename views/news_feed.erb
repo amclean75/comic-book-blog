@@ -1,1 +1,10 @@
-<h1>New Feed</h1>
+<h1>News Feed</h1>
+
+<% @posts.each do |post| %>
+	<p> <%= post.body %></p>
+<% end %>
+
+<form action"/news" method="POST">
+	<input type="textarea" name="[post]body"></input>
+	<input type="submit" value="Post">
+</form>

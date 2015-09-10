@@ -49,7 +49,8 @@ post "/list" do
 end
 
 get "/news" do
-	erb :news_feed 
+	@posts = Post.all
+	erb :news_feed
 end
 
 post "/signup" do
@@ -70,3 +71,8 @@ post "/sessions" do
 		redirect to 'login'
 	end
 end	
+
+post '/news' do
+	post = Post.create(params[:body])
+	redirect '/news' 
+end
