@@ -7,6 +7,19 @@
 <body>
 	<header>
 
+		<nav>
+				<a href="/">Home Page</a>
+				<a href="/news">News Feed</a>
+
+			<% if session[:user_id] == nil %>
+				<a href="/login">Login</a>
+				<a href="/signup">Sign up</a>
+			<% elsif session[:user_id] != nil %>
+				<a href="/profile">Profile</a>
+				<a href="/logout">Logout</a>
+			<% end %>
+		</nav>
+
 	</header>
 	<%= flash[:notice] if flash[:notice] %>
 	<%= yield %>
