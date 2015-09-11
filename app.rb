@@ -18,6 +18,7 @@ def current_user
 end
 
 get "/" do
+	@user = current_user
 	erb :index 	
 end
 
