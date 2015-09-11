@@ -2,6 +2,7 @@
 
 <% @users.each do |user| %>
 
-	<p><%= user.fname %></p>
+	<p><%= user.fname %> <%= user.lname %> <b>username:</b> 
+		<%= user.username %> <a href= "/users/<%= user.id %>" >To User Profile</a> </p>
 	
 <% end %>
