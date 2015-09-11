@@ -2,7 +2,7 @@
 
 <% @users.each do |user| %>
 
-	<p><%= user.fname %> <%= user.lname %> <b>username:</b> 
+	<p><%= user.fname %> <%= user.lname %> (<%= user.email %>) <b>username:</b> 
 		<%= user.username %> <a href= "/users/<%= user.id %>" >To User Profile</a> </p>
 	
 <% end %>

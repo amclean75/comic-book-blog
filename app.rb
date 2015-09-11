@@ -39,6 +39,7 @@ end
 post "/profile" do
 	@user = current_user
 	current_user.destroy
+	session[:user_id] = nil
 	redirect to '/'
 end
 
@@ -110,6 +111,9 @@ post "/sessions" do
 end	
 
 post '/news' do
-	post = Post.create(params[:body])
+	post = Post.new(params[:post])
+	post.user_id = current_user.id
+	post.save
+	p post
 	redirect '/news' 
 end
