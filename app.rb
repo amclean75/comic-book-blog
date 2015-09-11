@@ -68,7 +68,6 @@ end
 
 #This is displaying all of the posts currently created by all users
 get "/news" do
-	@user = current_user
 	@posts = Post.all
 	erb :news_feed
 end

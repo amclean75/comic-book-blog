@@ -1,7 +1,7 @@
 <h1>News Feed</h1>
 
 <% @posts.each do |post| %>
-	<p> <%= @user.username %> <%= post.body %></p>
+	<p> <b><%= post.user.username %>:</b> <%= post.body %></p>
 <% end %>
 
 <form action="/news" method="POST">

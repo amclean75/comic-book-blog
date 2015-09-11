@@ -15,5 +15,11 @@
 
 <h1> <%= @user.username %>'s Posts </h1>
 
+<ol>
+<% @user.posts.each do |post| %>
+		<li> <%= post.body %> <li>
+<%end%>
+</ol>
+
 
 
