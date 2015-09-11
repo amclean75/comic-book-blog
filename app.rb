@@ -68,6 +68,7 @@ end
 
 #This is displaying all of the posts currently created by all users
 get "/news" do
+	@user = current_user
 	@posts = Post.all
 	erb :news_feed
 end
@@ -114,6 +115,5 @@ post '/news' do
 	post = Post.new(params[:post])
 	post.user_id = current_user.id
 	post.save
-	p post
 	redirect '/news' 
 end
