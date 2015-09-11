@@ -68,7 +68,7 @@ end
 
 #This is displaying all of the posts currently created by all users
 get "/news" do
-	@posts = Post.all
+	@posts = Post.last(10).reverse!
 	erb :news_feed
 end
 
