@@ -4,9 +4,13 @@
 
 	<p> 
 		<a href= "/users/<%= user.id %>"><%= user.username%></a>
-		<% if current_user and current_user != user %>
-			(<a href="/follow/<%= user.id %>">follow</a>)
-		<%end%>
+			<% if current_user and current_user != user %>
+				<% if current_user and !current_user.following.include?(user) %>
+					(<a href="/follow/<%= user.id %>">follow</a>)
+				<% else %>
+					(<a href="/unfollow/<%= user.id %>">unfollow</a>)
+				<% end %>
+			<% end %>
 	</p>
 	
 <% end %>

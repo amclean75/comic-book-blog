@@ -38,6 +38,14 @@ get '/follow/:id' do
 	redirect to '/list'
 end
 
+get '/unfollow/:id' do
+	@relationship = Relationship.find_by(follower_id: current_user.id,
+											 followed_id: params[:id])
+	@relationship.destroy
+	flash[:notice] = "Unfollowed!"
+	redirect to '/list'
+end
+
 get "/profile" do
 	@user = current_user
 	erb :profile 
