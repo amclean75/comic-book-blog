@@ -31,6 +31,10 @@ get "/signup" do
 # 	redirect to "/profile"
 end
 
+get '/follow/:id' do
+	
+end
+
 get "/profile" do
 	@user = current_user
 	erb :profile 
