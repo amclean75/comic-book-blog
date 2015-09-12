@@ -13,10 +13,16 @@
 <input type="submit" value="Delete User">
 </form>
 
+<!-- User is Following -->
 <h3>Following</h3>
+<ol>
+<% @user.following.each do |user| %>
+	<li><%= user.username %></li>
+<% end %>
+</ol>
 
+<!-- Users Posts -->
 <h1> <%= @user.username %>'s Posts </h1>
-
 <ol>
 <% @user.posts.each do |post| %>
 		<li> <%= post.body %> </li>

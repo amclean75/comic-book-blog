@@ -32,7 +32,10 @@ get "/signup" do
 end
 
 get '/follow/:id' do
-	
+	@relationship = Relationship.create(follower_id: current_user.id, 
+																			followed_id: params[:id])
+	flash[:notice] = "Followed!"
+	redirect to '/list'
 end
 
 get "/profile" do
