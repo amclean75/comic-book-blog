@@ -44,9 +44,14 @@ post "/profile" do
 end
 
 get "/edit" do
-	@users = current_user
+	@user = current_user
 	erb :edit 
-# 	redirect to "/profile"
+end
+
+post "/edit" do 
+	current_user.update(params[:user])
+	flash[:notice] = "Profile successfully updated"
+	redirect to "/profile"
 end
 
 #This is listing all of the users on the User_List page
