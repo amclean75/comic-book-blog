@@ -2,7 +2,11 @@
 
 <% @users.each do |user| %>
 
-	<p><%= user.fname %> <%= user.lname %> (<%= user.email %>) <b>username:</b> 
-		<%= user.username %> <a href= "/users/<%= user.id %>" >To User Profile</a> </p>
+	<p> 
+		<a href= "/users/<%= user.id %>"><%= user.username%></a>
+		<% if current_user and current_user != user %>
+			(<a href="/follow/<%= user.id %>">follow</a>)
+		<%end%>
+	</p>
 	
 <% end %>
