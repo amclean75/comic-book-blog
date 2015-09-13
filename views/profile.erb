@@ -1,33 +1,34 @@
-<h1>Profile</h1>
 
+<div id="profile">
 	<h3><%= @user.fname %></h3>
 	<h3><%= @user.lname %></h3>
 	<h3><%= @user.email %></h3>
 	<h3><%= @user.username %></h3>
 
-<form action="/edit" method="GET">
-<input type="submit" value="Edit User">
-</form>
+	<form action="/edit" method="GET">
+	<input type="submit" value="Edit User">
+	</form>
 
-<form action="/profile" method="POST">
-<input type="submit" value="Delete User">
-</form>
+	<form action="/profile" method="POST">
+	<input type="submit" value="Delete User">
+	</form>
 
-<!-- User is Following -->
-<h3>Following</h3>
-<ol>
-<% @user.following.each do |user| %>
-	<li><%= user.username %></li>
-<% end %>
-</ol>
+	<!-- User is Following -->
+	<h3>Following</h3>
+	<ol>
+	<% @user.following.each do |user| %>
+		<li><%= user.username %></li>
+	<% end %>
+	</ol>
 
-<!-- Users Posts -->
-<h1> <%= @user.username %>'s Posts </h1>
-<ol>
-<% @user.posts.each do |post| %>
-		<li> <%= post.body %> </li>
-<%end%>
-</ol>
+	<!-- Users Posts -->
+	<h1> <%= @user.username %>'s Posts </h1>
+	<ol>
+	<% @user.posts.each do |post| %>
+			<li> <%= post.body %> </li>
+	<%end%>
+	</ol>
+</div>
 
 
 

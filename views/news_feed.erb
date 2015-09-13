@@ -1,8 +1,9 @@
-<h1>News Feed</h1>
-
-<% @posts.each do |post| %>
-	<p> <b><%= post.user.username %>:</b> <%= post.body %></p>
-<% end %>
+<div id="newsfeed">
+	<h1>News Feed</h1>
+	<% @posts.each do |post| %>
+		<p> <b><%= post.user.username %>:</b> <%= post.body %></p>
+	<% end %>
+</div>
 
 <form action="/news" method="POST">
 	<input type="textarea" name="[post]body">
