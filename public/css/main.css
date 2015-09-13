@@ -183,17 +183,6 @@ hr {
     display: none;
 }
 
-.form-style-6 h3{
-    background: #2E3A5C;
-    padding: 20px 0;
-    font-size: 140%;
-    font-weight: 300;
-    text-align: center;
-    color: #fff;
-    margin: -16px -16px 16px -16px;
-}
-
-
 .form-style-6 input[type="text"],
 .form-style-6 input[type="date"],
 .form-style-6 input[type="datetime"],
