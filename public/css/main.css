@@ -1,6 +1,8 @@
 body {
 	font-family: arial;
 	margin: 0;
+	background-image: url('../imgs/comic_book_covers.jpg');
+	/*background-repeat: no-repeat;*/
 }
 
 header {
@@ -35,17 +37,44 @@ a{
 	color: inherit;
 }
 
-#newsfeed{
+.bodycenterToPage{
+	margin-top: 25px;
+	display: inline-block;
 	text-align: center;
+}
+
+#news{
+	text-align: left;
+	width: 800px;
+	padding: 10px;
+	background-color: #88F7A6;
+}
+
+#center{
+	text-align: center;
+}
+
+.submitForm{
+	height: 80px;
+	background-color: #CCC;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
 /****** Fonts ******/
 
 p{
-	font-family: 'Luckiest Guy'
+	font-family: 'Luckiest Guy';
 	font-size: 1.3em;
+	margin-bottom: 0;
 }
 
-h3{
-	font-family: 'Luckiest Guy'
+#postBody{
+	font-family: arial;	
+	margin-top: 0;
+	font-size: .9em;
+}
+
+h1{
+	font-family: 'Luckiest Guy';
 }
