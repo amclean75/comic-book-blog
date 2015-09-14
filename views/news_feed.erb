@@ -13,8 +13,10 @@
 		<div id="news">
 			<div id="posts">
 				<% @posts.each do |post| %>
-					<p><%= post.user.fname %> <%= post.user.lname %> @<%= post.user.username %></p>
-					<p id="postBody"><%= post.body %></p>
+					<div class="userPosts">
+						<p><%= post.user.fname %> <%= post.user.lname %> @<%= post.user.username %></p>
+						<p id="postBody"><%= post.body %></p>
+					</div>
 				<% end %>
 			</div>
 		</div>

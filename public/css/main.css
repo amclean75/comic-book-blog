@@ -13,15 +13,18 @@ header {
 }
 
 nav{
-	font-size: .9em;
-	margin-top: 15px;
+	font-family: 'Luckiest Guy';
+	font-size: .8em;
+	font-style: oblique;
 	margin: 15px;
+	margin-bottom: 1em;
 	float: right;
 }
 
 #welcome{
 	float: left;
 	margin-left: 10px;
+	margin-top: .7em;
 	letter-spacing: .1em;
 }
 
@@ -34,7 +37,7 @@ nav a{
 }
 
 a:hover{
-	text-decoration: underline;
+	color: red;
 }
 
 .bodycenterToPage{
@@ -48,12 +51,30 @@ a:hover{
 	width: 800px;
 	padding: 10px;
 	background-color: #88F7A6;
+	padding: 0;
+}
+
+/****** Profile Page *******/
+#profileBox{
+	text-align: center;
 }
 
 #profile{
-	background-color: #88F7A6;	
+	margin-top: 80px;
+	margin-left: 400px;
+	background-color: #88F7A6;
+	border:solid black 10px;
+	width: 450px;
 }
 
+#profileCenter{
+	padding: 10px;
+}
+
+#profileBody{
+	text-align: left;
+}
+/**************************/
 .center{
 	text-align: center;
 	border-top: solid black 1px;
@@ -68,9 +89,9 @@ a:hover{
 }
 
 .mainBody{
-	border: solid black 3px;
-	border-top-right-radius: 13px;
-	border-top-left-radius: 13px;
+	border: solid black 8px;
+	border-top-right-radius: 18px;
+	border-top-left-radius: 18px;
 }
 
 /*Centering the Form Pages*/
@@ -91,6 +112,11 @@ a:hover{
 .formTitle{
 	margin-top: 0;
 	margin-bottom: .2em;
+}
+
+.userPosts{
+	/*border-top: solid black 5px;*/
+	border-bottom: solid black 5px;
 }
 
 /****** Rack-Flash ******/
@@ -119,6 +145,8 @@ p{
 	/*-webkit-text-stroke-width: .05em;*/
 	-webkit-text-stroke-color: black;
 	margin-bottom: 0;
+	margin-top: 0;
+	padding: 5px;
 }
 
 #postBody{
@@ -131,4 +159,3 @@ p{
 #posts{
 	letter-spacing: .1em;
 }
-
