@@ -1,28 +1,24 @@
 
-<div id="center">
+<div class="center">
+	<div class="bodycenterToPage">	
+		<div class="mainBody">
 
-<div class="bodycenterToPage">
-	
-	<div id="newsFeed">
+		<div class="submitForm">
+			<form action="/news" method="POST">
+				<input type="textarea" name="[post]body">
+				<input type="submit" value="Post">
+			</form>
+		</div>
 
-	<div class="submitForm">
-		<form action="/news" method="POST">
-			<input type="textarea" name="[post]body">
-			<input type="submit" value="Post">
-		</form>
-	</div>
+		<div id="news">
+			<div id="posts">
+				<% @posts.each do |post| %>
+					<p><%= post.user.fname %> <%= post.user.lname %> @<%= post.user.username %></p>
+					<p id="postBody"><%= post.body %></p>
+				<% end %>
+			</div>
+		</div>
 
-	<div id="news">
-		<div id="posts">
-			<% @posts.each do |post| %>
-				<p><%= post.user.fname %> <%= post.user.lname %> @<%= post.user.username %></p>
-				<p id="postBody"><%= post.body %></p>
-			<% end %>
 		</div>
 	</div>
-
-	</div>
-
-</div>
-
 </div>
