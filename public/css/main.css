@@ -37,13 +37,6 @@ a:hover{
 	text-decoration: underline;
 }
 
-a{
-	color: red;
-	-webkit-text-stroke-width: .05em;
-	-webkit-text-stroke-color: black;
-	text-decoration: none;
-}
-
 .bodycenterToPage{
 	margin-top: 25px;
 	display: inline-block;
@@ -87,12 +80,12 @@ a{
 }
 
 .mainFormBlock{
-	background-color: #88F7A6;
+	background-image: url('../imgs/background_image_dc.jpg'); 
 	font-size: 1.75em;
 	margin-top: 180px;
 	padding-bottom: 10px;
-	border-top: solid black 3px;
-	border-bottom: solid black 3px;
+	border-top: solid black 5px;
+	border-bottom: solid black 5px;
 }
 
 .formTitle{
@@ -105,15 +98,25 @@ a{
 
 /****** Fonts ******/
 
+a{
+	color: white;
+	-webkit-text-stroke-width: .05em;
+	-webkit-text-stroke-color: black;
+	text-decoration: none;
+}
+
 h3, h1{
-	font-family: 'Luckiest Guy'
+	font-family: 'Luckiest Guy';
+	color: orange;
+	-webkit-text-stroke-width: .05em;
+	-webkit-text-stroke-color: black;
 }
 
 p{
 	font-family: 'Luckiest Guy';
 	font-size: 1.3em;
 	color: red;
-	-webkit-text-stroke-width: .05em;
+	/*-webkit-text-stroke-width: .05em;*/
 	-webkit-text-stroke-color: black;
 	margin-bottom: 0;
 }
