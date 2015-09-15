@@ -101,12 +101,12 @@ a:hover{
 }
 
 .mainFormBlock{
-	background-image: url('../imgs/background_image_dc.jpg'); 
+	background-image: url('../imgs/background_image_dc2.jpg'); 
 	font-size: 1.75em;
 	margin-top: 180px;
 	padding-bottom: 10px;
-	border-top: solid black 5px;
-	border-bottom: solid black 5px;
+	border-top: solid black 15px;
+	border-bottom: solid black 15px;
 }
 
 .formTitle{
@@ -136,6 +136,13 @@ h3, h1{
 	color: orange;
 	-webkit-text-stroke-width: .05em;
 	-webkit-text-stroke-color: black;
+	letter-spacing: .1em;
+}
+
+li{
+	font-family: 'Luckiest Guy';
+	font-size: 1.3em;
+	list-style-type: circle;	
 }
 
 p{
