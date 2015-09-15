@@ -48,7 +48,7 @@ end
 
 get "/profile" do
 	@user = current_user
-	erb :profile 
+	erb :show 
 end
 
 post "/profile" do
@@ -79,7 +79,7 @@ end
 get '/users/:id' do 
 	begin 
 		@user = User.find(params[:id])
-		erb :show
+		erb :profile
 	rescue
 		flash[:notice] = "That User Does Not Exist"
 		redirect to '/'

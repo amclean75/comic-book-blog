@@ -78,12 +78,11 @@ a:hover{
 .center{
 	text-align: center;
 	border-top: solid black 1px;
-	border-bottom: solid black 1px;
 }
 
 .submitForm{
 	height: 80px;
-	background-color: #CCC;
+	/*background-color: #CCC;*/
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	padding-top: 20px;
@@ -94,6 +93,7 @@ a:hover{
 	width: 300px;
 }
 
+/*Submit Buttons in Profile Page*/
 .brah {
 	font-family: 'Luckiest Guy';
 	color: orange;
@@ -106,6 +106,7 @@ a:hover{
 	border: 1px solid #900;
 }
 
+/*Post Button*/
 .cool {
 	color: #fff;
 	background: red;
@@ -116,6 +117,8 @@ a:hover{
 	font-family: 'Luckiest Guy';
 	font-size: 20px;
 	font-style: oblique;
+	vertical-align: top;
+	margin-top: 10px;
 }
 
 .mainBody{
@@ -163,10 +166,17 @@ a{
 
 h3, h1{
 	font-family: 'Luckiest Guy';
-	color: #ffa700;
+	/*color: #ffa700;*/
+	color: white;
+	font-size: 1.5em;
 	-webkit-text-stroke-width: .05em;
 	-webkit-text-stroke-color: black;
 	letter-spacing: .1em;
+}
+
+h1{
+	color:yellow;
+	font-size: 1.5em;
 }
 
 li{
@@ -201,6 +211,8 @@ p{
 	text-align: center;
 }
 
+/************** Form Styling ***************/
+
 hr {
 	border-color: #8C6B4D;
 	width: 600px;
@@ -213,6 +225,7 @@ hr {
     margin: 20px auto;
     padding: 16px;
     background: #f8f8f8;
+    border-radius: 18px;
     display: none;
 }
 
