@@ -179,7 +179,7 @@ hr {
     max-width: 400px;
     margin: 20px auto;
     padding: 16px;
-    background: #F7F7F7;
+    background: #f8f8f8;
     display: none;
 }
 
@@ -225,9 +225,9 @@ hr {
 .form-style-6 textarea:focus,
 .form-style-6 select:focus
 {
-    box-shadow: 0 0 5px #2E3A5C;
+    box-shadow: 0 0 5px #1b8d1b;
     padding: 3%;
-    border: 1px solid #2E3A5C;
+    border: 1px solid #1b8d1b;
 }
 
 .form-style-6 input[type="submit"],
@@ -247,5 +247,5 @@ hr {
 
 .form-style-6 input[type="submit"]:hover,
 .form-style-6 input[type="button"]:hover{
-    background: #2E3A5C;
+    background: #1b8d1b;
 }
