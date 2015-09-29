@@ -125,6 +125,7 @@ a:hover{
 	border: solid black 8px;
 	border-top-right-radius: 18px;
 	border-top-left-radius: 18px;
+	background-color: gold;
 }
 
 /*Centering the Form Pages*/
@@ -134,7 +135,8 @@ a:hover{
 }
 
 .mainFormBlock{
-	background-image: url('../imgs/background_image_dc2.jpg'); 
+	background-image: url('../imgs/background_image_dc2.jpg');
+	background-size: 100%; 
 	font-size: 1.75em;
 	margin-top: 180px;
 	padding-bottom: 10px;
@@ -149,7 +151,7 @@ a:hover{
 
 .userPosts{
 	/*border-top: solid black 5px;*/
-	border-bottom: solid black 5px;
+	border-bottom: solid black 4px;
 }
 
 /****** Rack-Flash ******/
